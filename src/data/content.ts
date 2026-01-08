@@ -172,7 +172,6 @@ export const yogaTherapyContent = {
 
 // Contact/Footer content
 export const contactContent = {
-    address: "123 Serenity Lane, Peaceful Valley, CA 90210",
     phone: "(555) 123-4567",
     email: "hello@restyoga.com",
     hours: "Mon-Sat: 6am - 8pm | Sun: 8am - 6pm",
