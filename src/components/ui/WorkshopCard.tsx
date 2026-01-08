@@ -8,10 +8,10 @@ interface WorkshopCardProps {
 }
 
 const seasonColors = {
-    Winter: "bg-rest-light-gray",
+    Winter: "bg-rest-taupe/30",
     Spring: "bg-rest-beige",
     Summer: "bg-rest-cream",
-    Fall: "bg-rest-taupe/30",
+    Fall: "bg-rest-light-gray",
 };
 
 export function WorkshopCard({
@@ -32,7 +32,7 @@ export function WorkshopCard({
             <h3 className="font-script text-lg text-rest-charcoal mb-3 leading-relaxed">
                 {title}
             </h3>
-            <p className="text-sm text-rest-warm-gray mb-4 leading-relaxed flex-grow">
+            <p className="text-sm text-rest-warm-gray mb-4 leading-relaxed grow">
                 {description}
             </p>
             <div className="mt-auto space-y-3">

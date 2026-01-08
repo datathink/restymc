@@ -5,16 +5,19 @@ export const pricingTiers = [
         name: "first time pass",
         price: 22,
         subtitle: "Single class drop-in price: $0",
+        link: "https://momence.com/Rest%3AYoga-and-Mindfulness-Center/membership/First-Time-Pass/58250",
     },
     {
         id: "5-class",
         name: "5 class pass",
         price: 55,
+        link: "https://momence.com/Rest%3AYoga-and-Mindfulness-Center/membership/5-Class-Pass-/58247",
     },
     {
         id: "10-class",
         name: "10 class pass",
         price: 95,
+        link: "https://momence.com/Rest%3AYoga-and-Mindfulness-Center/membership/10-Class-Pass-/58248",
     },
 ];
 
@@ -94,26 +97,15 @@ export const instructors = [
         tagline:
             "I believe yoga can heal & strengthen your body, your mind and your soul.",
         bio: "I am a mother of triplets and have been practicing yoga for over a decade. Combined with my love for nutrition and a healthy lifestyle, yoga became my source of vitality when life becomes overwhelming. Whether you are struggling with anxiety or recovering from an injury, whether you want to bring more peace to your days or bring more strength to your muscles, I know the benefits of yoga can help. I have been trained in yoga specifically for the postnatal experience and am especially experienced in teaching yoga for first-time mothers.",
-        credentials: [
-            "200+ hour certified yoga teacher",
-            "Trauma-informed",
-            "Mindfulness Coaching certification",
-            "BS in Marriage, Family & Human Development",
-        ],
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop&crop=face",
+        image: "/julia.png",
     },
     {
-        id: "tierra",
-        name: "Tierra",
+        id: "terra",
+        name: "Terra",
         tagline:
             "I believe yoga helps create balance and harmony in our lives.",
         bio: 'My yoga journey began when I was a new mother seeking peace and balance after having my three children and feeling "broken" after years of high-intensity cardio training. Yoga has helped heal my body, calm my mind, and reminded me by providing me with a state of the most inner peace and fulfillment. I hope to share this gift with you for the rest of my life.',
-        credentials: [
-            "200+ hour certified yoga teacher",
-            "Specializes in restorative yoga",
-            "Children's yoga certified",
-        ],
-        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face",
+        image: "/terra.png",
     },
 ];
 
@@ -165,7 +157,7 @@ export const heroContent = {
 
 // Yoga Therapy content
 export const yogaTherapyContent = {
-    title: "YogaTherapy",
+    title: "Yoga Therapy",
     description:
         "Throughout the year, we will be hosting weekend workshops & mini-retreats. You can also book your own event with us!",
     ctaText: "Book your Private Event!",

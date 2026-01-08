@@ -14,11 +14,11 @@ export function PricingCard({
     return (
         <div
             className={`
-        bg-rest-light-gray rounded-lg p-6 text-center
-        transition-all duration-300 ease-out
-        hover:shadow-lg hover:-translate-y-1
-        ${className}
-      `}
+                bg-slate-200 rounded-lg p-6 text-center
+                transition-all duration-300 ease-out
+                hover:shadow-lg hover:-translate-y-1
+                ${className}
+            `}
         >
             <h3 className="font-script text-xl text-rest-charcoal mb-2">
                 {name}

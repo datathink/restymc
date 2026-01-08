@@ -36,13 +36,13 @@ export function PersonalServices() {
                         <div
                             key={service.id}
                             className={`
-                transition-all duration-500 ease-out
-                ${
-                    cardsVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-10"
-                }
-              `}
+                                transition-all duration-500 ease-out
+                                ${
+                                    cardsVisible
+                                        ? "opacity-100 translate-y-0"
+                                        : "opacity-0 translate-y-10"
+                                }
+                            `}
                             style={{ transitionDelay: `${index * 150}ms` }}
                         >
                             <ServiceCard

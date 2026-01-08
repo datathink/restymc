@@ -44,7 +44,7 @@ export function YogaClasses() {
                                     <span className="mr-3 text-rest-sage text-lg">
                                         •
                                     </span>
-                                    <span className="font-script text-lg italic">
+                                    <span className="text-lg italic">
                                         {question}
                                     </span>
                                 </li>
@@ -60,7 +60,7 @@ export function YogaClasses() {
                             <p className="text-sm text-rest-warm-gray">
                                 with code:{" "}
                                 <span className="font-bold text-rest-warm-brown">
-                                    FREE
+                                    1FREE
                                 </span>
                             </p>
                         </div>
@@ -71,53 +71,49 @@ export function YogaClasses() {
                                 <div
                                     key={tier.id}
                                     className={`
-                    transition-all duration-500 ease-out
-                    ${
-                        cardsVisible
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-5"
-                    }
-                  `}
+                                        transition-all duration-500 ease-out
+                                        ${
+                                            cardsVisible
+                                                ? "opacity-100 translate-y-0"
+                                                : "opacity-0 translate-y-5"
+                                        }
+                                    `}
                                     style={{
                                         transitionDelay: `${index * 100}ms`,
                                     }}
                                 >
-                                    <PricingCard
-                                        name={tier.name}
-                                        price={tier.price}
-                                        subtitle={tier.subtitle}
-                                    />
+                                    <a
+                                        href={tier.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <PricingCard
+                                            name={tier.name}
+                                            price={tier.price}
+                                            subtitle={tier.subtitle}
+                                        />
+                                    </a>
                                 </div>
                             ))}
-                        </div>
-
-                        {/* Testimonials teaser */}
-                        <div className="mt-8 text-right">
-                            <a
-                                href="#therapy"
-                                className="font-script text-xl text-rest-taupe hover:text-rest-warm-brown transition-colors"
-                            >
-                                Testimonials
-                            </a>
                         </div>
                     </div>
 
                     {/* Image */}
                     <div
                         className={`
-              hidden lg:block
-              transition-all duration-700 ease-out delay-300
-              ${
-                  sectionVisible
-                      ? "opacity-100 translate-x-0"
-                      : "opacity-0 translate-x-10"
-              }
-            `}
+                            hidden lg:block
+                            transition-all duration-700 ease-out delay-300
+                            ${
+                                sectionVisible
+                                    ? "opacity-100 translate-x-0"
+                                    : "opacity-0 translate-x-10"
+                            }
+                            `}
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=500&h=600&fit=crop"
+                            src="/studio.png"
                             alt="Yoga studio with equipment and mats"
-                            className="rounded-lg shadow-xl object-cover w-full h-[500px]"
+                            className="rounded-lg shadow-xl object-cover w-full h-175"
                         />
                     </div>
                 </div>

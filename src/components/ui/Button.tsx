@@ -25,8 +25,7 @@ export function Button({
     const baseStyles = `
     inline-block px-6 py-3 rounded-md font-medium text-sm
     transition-all duration-300 ease-out
-    hover:scale-[1.02] hover:shadow-md
-    active:scale-[0.98]
+    hover:shadow-md active:scale-[0.98]
     cursor-pointer text-center
   `;
 

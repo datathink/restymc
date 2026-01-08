@@ -12,14 +12,14 @@ export function Instructors() {
                         <div
                             key={instructor.id}
                             className={`
-                grid grid-cols-1 lg:grid-cols-2 gap-8 items-center
-                transition-all duration-700 ease-out
-                ${
-                    sectionVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-10"
-                }
-              `}
+                                grid grid-cols-1 lg:grid-cols-2 gap-8 items-center
+                                transition-all duration-700 ease-out
+                                ${
+                                    sectionVisible
+                                        ? "opacity-100 translate-y-0"
+                                        : "opacity-0 translate-y-10"
+                                }
+                            `}
                             style={{ transitionDelay: `${index * 200}ms` }}
                         >
                             {/* Image - alternating sides */}
@@ -32,14 +32,18 @@ export function Instructors() {
                                     <img
                                         src={instructor.image}
                                         alt={`${instructor.name} - Yoga Instructor`}
-                                        className="rounded-lg shadow-xl w-full h-[400px] object-cover"
+                                        className="rounded-lg shadow-xl w-full h-100 object-cover"
                                     />
                                     {/* Decorative element */}
                                     <div
                                         className={`
-                      absolute -bottom-4 w-full h-full border-2 border-rest-sage/30 rounded-lg -z-10
-                      ${index % 2 === 0 ? "-right-4" : "-left-4"}
-                    `}
+                                            absolute -bottom-4 w-full h-full border-2 border-rest-sage/30 rounded-lg -z-10
+                                            ${
+                                                index % 2 === 0
+                                                    ? "-right-4"
+                                                    : "-left-4"
+                                            }
+                                        `}
                                     />
                                 </div>
                             </div>
@@ -63,38 +67,6 @@ export function Instructors() {
                                 <p className="text-rest-warm-gray leading-relaxed mb-6">
                                     {instructor.bio}
                                 </p>
-
-                                {instructor.credentials && (
-                                    <ul
-                                        className={`space-y-1 text-sm text-rest-taupe ${
-                                            index % 2 === 1 ? "lg:ml-auto" : ""
-                                        }`}
-                                    >
-                                        {instructor.credentials.map(
-                                            (credential, credIndex) => (
-                                                <li
-                                                    key={credIndex}
-                                                    className={`flex items-center ${
-                                                        index % 2 === 1
-                                                            ? "lg:justify-end"
-                                                            : ""
-                                                    }`}
-                                                >
-                                                    <span
-                                                        className={`text-rest-sage ${
-                                                            index % 2 === 1
-                                                                ? "lg:order-2 lg:ml-2"
-                                                                : "mr-2"
-                                                        }`}
-                                                    >
-                                                        ✓
-                                                    </span>
-                                                    {credential}
-                                                </li>
-                                            )
-                                        )}
-                                    </ul>
-                                )}
                             </div>
                         </div>
                     ))}

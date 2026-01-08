@@ -15,21 +15,21 @@ export function YogaTherapy() {
                 <div
                     ref={headerRef}
                     className={`
-            grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20
-            transition-all duration-700 ease-out
-            ${
-                headerVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
-            }
-          `}
+                        grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20
+                        transition-all duration-700 ease-out
+                        ${
+                            headerVisible
+                                ? "opacity-100 translate-y-0"
+                                : "opacity-0 translate-y-10"
+                        }
+                    `}
                 >
                     {/* Image */}
                     <div className="relative">
                         <img
-                            src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=500&h=400&fit=crop"
+                            src="/julia-ending.png"
                             alt="Yoga therapy session"
-                            className="rounded-lg shadow-xl w-full h-[350px] object-cover"
+                            className="rounded-lg shadow-xl mx-auto w-100 h-175 object-cover"
                         />
                     </div>
 
@@ -53,13 +53,13 @@ export function YogaTherapy() {
                 <div
                     ref={contentRef}
                     className={`
-            transition-all duration-700 ease-out
-            ${
-                contentVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
-            }
-          `}
+                        transition-all duration-700 ease-out
+                        ${
+                            contentVisible
+                                ? "opacity-100 translate-y-0"
+                                : "opacity-0 translate-y-10"
+                        }
+                    `}
                 >
                     <h3 className="font-script text-3xl text-rest-charcoal text-center mb-4">
                         Testimonials

@@ -34,7 +34,7 @@ export function Hero() {
                     >
                         <div className="relative">
                             <img
-                                src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&h=600&fit=crop"
+                                src="/header.jpg"
                                 alt="Eucalyptus plant in glass vase"
                                 className="rounded-lg shadow-xl max-w-xs lg:max-w-sm object-cover"
                             />
