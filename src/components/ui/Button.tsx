@@ -1,27 +1,28 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'outline';
-  children: ReactNode;
-  href?: string;
-  onClick?: () => void;
-  className?: string;
+    variant?: "primary" | "secondary" | "outline";
+    children: ReactNode;
+    href?: string;
+    onClick?: () => void;
+    className?: string;
 }
 
 const variantStyles = {
-  primary: 'bg-rest-tan text-rest-charcoal hover:bg-rest-dark-tan',
-  secondary: 'bg-rest-warm-brown text-white hover:bg-rest-charcoal',
-  outline: 'bg-transparent border-2 border-rest-taupe text-rest-charcoal hover:bg-rest-beige',
+    primary: "bg-rest-tan text-rest-charcoal hover:bg-rest-dark-tan",
+    secondary: "bg-rest-warm-brown text-white hover:bg-rest-charcoal",
+    outline:
+        "bg-transparent border-2 border-rest-taupe text-rest-charcoal hover:bg-rest-beige",
 };
 
 export function Button({
-  variant = 'primary',
-  children,
-  href,
-  onClick,
-  className = '',
+    variant = "primary",
+    children,
+    href,
+    onClick,
+    className = "",
 }: ButtonProps) {
-  const baseStyles = `
+    const baseStyles = `
     inline-block px-6 py-3 rounded-md font-medium text-sm
     transition-all duration-300 ease-out
     hover:scale-[1.02] hover:shadow-md
@@ -29,21 +30,21 @@ export function Button({
     cursor-pointer text-center
   `;
 
-  const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${className}`;
+    const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${className}`;
 
-  if (href) {
+    if (href) {
+        return (
+            <a href={href} className={combinedStyles}>
+                {children}
+            </a>
+        );
+    }
+
     return (
-      <a href={href} className={combinedStyles}>
-        {children}
-      </a>
+        <button onClick={onClick} className={combinedStyles}>
+            {children}
+        </button>
     );
-  }
-
-  return (
-    <button onClick={onClick} className={combinedStyles}>
-      {children}
-    </button>
-  );
 }
 
 export default Button;
