@@ -17,8 +17,8 @@ function App() {
                 <YogaClasses />
                 <PersonalServices />
                 <Workshops />
-                <Instructors />
                 <YogaTherapy />
+                <Instructors />
             </main>
             <Footer />
         </div>

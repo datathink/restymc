@@ -1,20 +1,14 @@
 interface PricingCardProps {
     name: string;
-    price: number;
-    subtitle?: string;
+    price: number | string;
     className?: string;
 }
 
-export function PricingCard({
-    name,
-    price,
-    subtitle,
-    className = "",
-}: PricingCardProps) {
+export function PricingCard({ name, price, className = "" }: PricingCardProps) {
     return (
         <div
             className={`
-                bg-slate-200 rounded-lg p-6 text-center
+                bg-[#c8cfc1] rounded-lg p-6 text-center
                 transition-all duration-300 ease-out
                 hover:shadow-lg hover:-translate-y-1
                 ${className}
@@ -24,16 +18,13 @@ export function PricingCard({
                 {name}
             </h3>
             <div className="flex items-start justify-center">
-                <span className="text-2xl text-rest-warm-gray mt-1">$</span>
+                {typeof price === "number" && (
+                    <span className="text-xl text-rest-warm-gray mt-1">$</span>
+                )}
                 <span className="text-5xl font-serif font-semibold text-rest-charcoal">
                     {price}
                 </span>
             </div>
-            {subtitle && (
-                <p className="text-xs text-rest-warm-gray mt-2 italic">
-                    {subtitle}
-                </p>
-            )}
         </div>
     );
 }

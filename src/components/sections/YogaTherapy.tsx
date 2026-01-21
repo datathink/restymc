@@ -64,24 +64,6 @@ export function YogaTherapy() {
                     <h3 className="font-script text-3xl text-rest-charcoal text-center mb-4">
                         Testimonials
                     </h3>
-
-                    <p className="font-script text-xl text-rest-warm-brown text-center italic mb-12 max-w-2xl mx-auto">
-                        {yogaTherapyContent.testimonialIntro}
-                    </p>
-
-                    {/* Testimonial Questions */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 max-w-4xl mx-auto">
-                        {yogaTherapyContent.testimonialQuestions.map(
-                            (question, index) => (
-                                <div
-                                    key={index}
-                                    className="bg-rest-beige/50 rounded-lg p-4 text-sm text-rest-warm-gray italic"
-                                >
-                                    "{question}"
-                                </div>
-                            )
-                        )}
-                    </div>
                 </div>
 
                 {/* Testimonial Cards */}

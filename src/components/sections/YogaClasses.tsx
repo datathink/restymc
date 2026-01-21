@@ -1,8 +1,17 @@
+import { useState } from "react";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import { PricingCard } from "../ui";
 import { pricingTiers } from "../../data/content";
+import {
+    Dialog,
+    DialogTrigger,
+    DialogContent,
+    DialogTitle,
+} from "../ui/dialog";
 
 export function YogaClasses() {
+    const [dialogOpen, setDialogOpen] = useState(false);
+
     const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation();
     const { ref: cardsRef, isVisible: cardsVisible } = useScrollAnimation();
 
@@ -20,13 +29,13 @@ export function YogaClasses() {
                     <div
                         ref={sectionRef}
                         className={`
-              transition-all duration-700 ease-out
-              ${
-                  sectionVisible
-                      ? "opacity-100 translate-x-0"
-                      : "opacity-0 -translate-x-10"
-              }
-            `}
+                            transition-all duration-700 ease-out
+                            ${
+                                sectionVisible
+                                    ? "opacity-100 translate-x-0"
+                                    : "opacity-0 -translate-x-10"
+                            }
+                        `}
                     >
                         <h2 className="font-script text-5xl md:text-6xl text-rest-charcoal mb-8">
                             Yoga
@@ -52,21 +61,26 @@ export function YogaClasses() {
                         </ul>
 
                         {/* Promo Banner */}
-                        <div className="bg-rest-tan/50 rounded-lg p-4 text-center mb-8">
-                            <p className="font-medium text-rest-charcoal">
-                                Come to a{" "}
-                                <span className="font-bold">FREE</span> class
-                            </p>
-                            <p className="text-sm text-rest-warm-gray">
-                                with code:{" "}
-                                <span className="font-bold text-rest-warm-brown">
-                                    1FREE
-                                </span>
-                            </p>
-                        </div>
+                        <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+                            <DialogTrigger className="bg-rest-tan/50 cursor-pointer rounded-lg p-4 my-4 font-bold w-full transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1">
+                                Schedule your next class here
+                            </DialogTrigger>
+                            <DialogContent className="max-w-2xl max-h-[80vh]">
+                                <DialogTitle className="font-script text-3xl text-rest-charcoal">
+                                    Schedule a Class
+                                </DialogTitle>
+                                {dialogOpen && (
+                                    <iframe
+                                        src="/momence-widget.html"
+                                        className="w-full h-[60vh] border-0"
+                                        title="Class Schedule"
+                                    />
+                                )}
+                            </DialogContent>
+                        </Dialog>
 
                         {/* Pricing Cards */}
-                        <div ref={cardsRef} className="grid grid-cols-3 gap-4">
+                        <div ref={cardsRef} className="grid grid-cols-4 gap-4">
                             {pricingTiers.map((tier, index) => (
                                 <div
                                     key={tier.id}
@@ -90,11 +104,13 @@ export function YogaClasses() {
                                         <PricingCard
                                             name={tier.name}
                                             price={tier.price}
-                                            subtitle={tier.subtitle}
                                         />
                                     </a>
                                 </div>
                             ))}
+                        </div>
+                        <div>
+                            <p>Single class drop-in price: $12</p>
                         </div>
                     </div>
 
