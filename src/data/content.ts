@@ -133,8 +133,8 @@ export const navItems = [
     { label: "Classes", href: "#classes" },
     { label: "Services", href: "#services" },
     { label: "Workshops", href: "#workshops" },
-    { label: "About", href: "#about" },
     { label: "Yoga Therapy", href: "#therapy" },
+    { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
 ];
 

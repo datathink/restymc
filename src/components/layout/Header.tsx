@@ -39,8 +39,8 @@ export function Header() {
             isMobileMenuOpen
                 ? "bg-rest-cream shadow-sm py-3"
                 : isScrolled
-                ? "bg-rest-cream/95 backdrop-blur-sm shadow-sm py-3"
-                : "bg-transparent py-5"
+                  ? "bg-rest-cream/95 backdrop-blur-sm shadow-sm py-3"
+                  : "bg-transparent py-5"
         }
       `}
         >

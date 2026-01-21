@@ -80,7 +80,10 @@ export function YogaClasses() {
                         </Dialog>
 
                         {/* Pricing Cards */}
-                        <div ref={cardsRef} className="grid grid-cols-4 gap-4">
+                        <div
+                            ref={cardsRef}
+                            className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+                        >
                             {pricingTiers.map((tier, index) => (
                                 <div
                                     key={tier.id}
@@ -109,9 +112,9 @@ export function YogaClasses() {
                                 </div>
                             ))}
                         </div>
-                        <div>
-                            <p>Single class drop-in price: $12</p>
-                        </div>
+                        <p className="text-center text-rest-warm-gray text-sm mt-3">
+                            Single class drop-in: <span className="font-semibold text-rest-charcoal">$12</span>
+                        </p>
                     </div>
 
                     {/* Image */}
