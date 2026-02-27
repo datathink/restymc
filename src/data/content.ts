@@ -32,6 +32,7 @@ export const services = [
         id: "ladies-night",
         question: "Ladies Night Out",
         title: "Ladies Night Out",
+        price: "$150",
         description: "Groups up to 5 package includes:",
         features: [
             "1 hour private yoga practice",
@@ -44,6 +45,7 @@ export const services = [
         id: "private",
         question: "Want the studio all to yourself?",
         title: "Private Practice",
+        price: "$45",
         description:
             "Does joining a class make you nervous? Are you recovering from an injury and desire a practice designed especially for you? Do you want to take yoga to a deeper, more personal level?",
         features: [],
@@ -53,6 +55,7 @@ export const services = [
         id: "group",
         question: "Family, youth group, or friends only",
         title: "Group Bookings",
+        price: "$15/person",
         description: "Private group slots are available!",
         features: [
             "2-5 people required",
@@ -87,7 +90,7 @@ export const instructors = [
         name: "Julia",
         tagline:
             "I believe yoga can heal & strengthen your body, your mind and your soul.",
-        bio: "I am a mother of seven and have been practicing yoga for over ten years. I am a 500HR certified yoga teacher and founder of REST: Yoga & Mindfulness Center. If you are struggling with embracing your body and health challenges, I've been there! A visit to the emergency room and autoimmune diagnosis started me on my personal yoga journey. The benefits of yoga in my life have been exponential — physically, emotionally, mentally and spiritually. I only hope such a practice can do the same for you!",
+        bio: "I am a mother of seven and have been practicing yoga for over ten years. I am a 500HR certified yoga teacher and founder of REST: Yoga & Mindfulness Center.  I also enjoy pickleball, board games, reading, and friends. If you are struggling with embracing your body and/or have had health challenges, I've been there! A visit to the emergency room and autoimmune diagnosis started me on my personal yoga journey. For years I have been curious about how the body, mind and spirit all work together. Somehow yoga fell in my lap as an answer to that question and I love it! The benefits of yoga in my life have been exponential — physically, emotionally, mentally and spiritually. I only hope such a practice can do the same for you!",
         image: "/julia.png",
     },
     {
@@ -95,7 +98,7 @@ export const instructors = [
         name: "Terra",
         tagline:
             "I believe yoga helps create balance and harmony in our lives.",
-        bio: 'I\'m a lover of sourdough, slippers, warm showers, watercolor, flowers, and a good book. I have been practicing yoga for nearly a decade and am excited to share my love of yoga with others. I came to yoga after having my three children and feeling "broken." I came seeking physical healing and found not only that but also mental, emotional, and spiritual strength. Yoga has changed me, helped me, healed me, and enlivened me, providing me with an opportunity to reconnect with myself both on the mat and as I step off the mat and into the rest of life.',
+        bio: 'I am a lover of sourdough, slippers, watercolor, flowers, and a good book. I have been practicing yoga for nearly a decade and am excited to share my love of yoga with others. I first came to yoga feeling "broken." The ups and downs of motherhood and life in general left me feeling disconnected with myself. Yoga has helped me find healing and strength physically, mentally, emotionally, and spiritually.  I believe it can do the same for anyone.  Whether you\'re younger or older, flexible or inflexible, thriving or just barely surviving, yoga is for you.  Time on the mat can be a moving meditation \u2013 a time to connect more deeply with ourselves and all that\'s around us.  This gentle movement brings stillness and clarity both while we practice and as we move into the rest of life.  All we have to do is show up and trust the process.  You\'re stronger than you think! So come on, let\'s practice together.',
         image: "/terra.png",
     },
 ];
@@ -104,27 +107,28 @@ export const instructors = [
 export const testimonials = [
     {
         id: "1",
-        quote: "REST Yoga has transformed my relationship with my body and mind. Julia's classes are the perfect blend of challenge and compassion. I finally found a practice that truly nourishes me.",
-        author: "Sarah M.",
-        role: "Member since 2024",
+        quote: "I started yoga in October of 2025 and noticed throughout that month and the month of November that I was noticing things with more clarity and had greater feelings of gratitude. I attribute this in part to yoga!",
+        author: "Katie",
     },
     {
         id: "2",
-        quote: "After years of high-intensity workouts, I was skeptical about yoga. But the instructors here understand that yoga is more than physical. They helped me find peace I didn't know I was missing.",
-        author: "Jennifer K.",
-        role: "Workshop participant",
+        quote: "Yoga has allowed me to connect with myself.  I love being able to take a moment to check in with my body and mind and adjust where needed. I'm also more aware of how I move and the responses my body has as I practice yoga.  It is, for me, a renewal of awareness and connection in a deeply personal way.",
+        author: "Rachel",
     },
     {
         id: "3",
-        quote: "The private sessions helped me recover from injury in ways I never thought possible. I'm so grateful for this community and the personalized attention I received.",
-        author: "Michelle R.",
-        role: "Yoga therapy client",
+        quote: "Yoga helps me to feel focused and calm,  especially with Julia in her serene studio and with her wonderful instruction.",
+        author: "Jenn",
     },
     {
         id: "4",
-        quote: "As a busy mom, finding time for myself felt impossible. REST Yoga gave me permission to prioritize my wellbeing. The workshops on motherhood changed my perspective entirely.",
-        author: "Amanda T.",
-        role: "Mother of three",
+        quote: "Yoga has helped me strengthen my muscles, increase my stamina and flexibility! Yoga has been my weekly me time, something I look forward to as an escape from my stressful life. Julia makes the studio a place where I can reset emotionally and spiritually while working on myself.",
+        author: "Sonya",
+    },
+    {
+        id: "5",
+        quote: "I have never been flexible, so yoga was always intimidating to me, but I love practicing yoga at REST! Julia is always encouraging and she provides lots of options for each pose. I always come away from a yoga session feeling that my body has been strengthened and my mind has been calmed. I highly recommend it!",
+        author: "Debbie",
     },
 ];
 

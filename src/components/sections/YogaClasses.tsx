@@ -115,6 +115,9 @@ export function YogaClasses() {
                         <p className="text-center text-rest-warm-gray text-sm mt-3">
                             Single class drop-in: <span className="font-semibold text-rest-charcoal">$12</span>
                         </p>
+                        <p className="text-center text-rest-warm-brown text-sm mt-2 font-semibold">
+                            with code: 1FREE
+                        </p>
                     </div>
 
                     {/* Image */}
