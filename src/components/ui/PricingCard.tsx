@@ -1,10 +1,16 @@
 interface PricingCardProps {
     name: string;
     price: number | string;
+    subtext?: string;
     className?: string;
 }
 
-export function PricingCard({ name, price, className = "" }: PricingCardProps) {
+export function PricingCard({
+    name,
+    price,
+    subtext,
+    className = "",
+}: PricingCardProps) {
     return (
         <div
             className={`
@@ -25,6 +31,9 @@ export function PricingCard({ name, price, className = "" }: PricingCardProps) {
                     {price}
                 </span>
             </div>
+            {subtext && (
+                <p className="text-rest-warm-gray text-sm mt-2">{subtext}</p>
+            )}
         </div>
     );
 }

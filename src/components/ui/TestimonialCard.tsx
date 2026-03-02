@@ -1,14 +1,12 @@
 interface TestimonialCardProps {
     quote: string;
     author: string;
-    role?: string;
     className?: string;
 }
 
 export function TestimonialCard({
     quote,
     author,
-    role,
     className = "",
 }: TestimonialCardProps) {
     return (
@@ -20,7 +18,7 @@ export function TestimonialCard({
         ${className}
       `}
         >
-            <div className="text-4xl text-rest-taupe mb-4 font-serif leading-none">
+            <div className="text-5xl text-rest-taupe font-serif leading-none">
                 "
             </div>
             <blockquote className="text-rest-warm-gray text-sm leading-relaxed mb-4 italic">
@@ -31,9 +29,6 @@ export function TestimonialCard({
                     <span className="block font-medium text-rest-charcoal">
                         {author}
                     </span>
-                    {role && (
-                        <span className="text-xs text-rest-taupe">{role}</span>
-                    )}
                 </cite>
             </footer>
         </div>
