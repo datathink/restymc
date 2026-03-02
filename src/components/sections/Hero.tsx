@@ -103,35 +103,6 @@ export function Hero() {
                             </p>
                         </div>
 
-                        {/* Scroll indicator */}
-                        <div
-                            className={`
-                pt-8 transition-all duration-700 ease-out delay-1000
-                ${isVisible ? "opacity-100" : "opacity-0"}
-              `}
-                        >
-                            <a
-                                href="#classes"
-                                className="inline-flex flex-col items-center text-rest-taupe hover:text-rest-warm-brown transition-colors"
-                            >
-                                <span className="text-xs uppercase tracking-widest mb-2">
-                                    Explore
-                                </span>
-                                <svg
-                                    className="w-6 h-6 animate-bounce"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

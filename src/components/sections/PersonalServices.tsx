@@ -50,6 +50,7 @@ export function PersonalServices() {
                                 description={service.description}
                                 features={service.features}
                                 ctaText={service.ctaText}
+                                price={service.price}
                             />
                         </div>
                     ))}

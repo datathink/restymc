@@ -5,6 +5,7 @@ interface ServiceCardProps {
     description: string;
     features: string[];
     ctaText: string;
+    price?: string;
     className?: string;
 }
 
@@ -13,6 +14,7 @@ export function ServiceCard({
     description,
     features,
     ctaText,
+    price,
     className = "",
 }: ServiceCardProps) {
     return (
@@ -24,9 +26,14 @@ export function ServiceCard({
                 ${className}
             `}
         >
-            <h3 className="font-script text-xl text-rest-charcoal mb-4 leading-relaxed">
+            <h3 className="font-script text-xl text-rest-charcoal mb-2 leading-relaxed">
                 {question}
             </h3>
+            {price && (
+                <p className="text-lg font-semibold text-rest-charcoal mb-4">
+                    {price}
+                </p>
+            )}
             <p className="text-sm text-rest-warm-gray mb-4 leading-relaxed">
                 {description}
             </p>

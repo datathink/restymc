@@ -69,25 +69,25 @@ export function YogaTherapy() {
                 {/* Testimonial Cards */}
                 <div
                     ref={testimonialsRef}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+                    // className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    className="flex flex-row flex-wrap gap-4 justify-center"
                 >
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={testimonial.id}
                             className={`
-                transition-all duration-500 ease-out
-                ${
-                    testimonialsVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-10"
-                }
-              `}
+                                transition-all duration-500 ease-out max-w-75
+                                ${
+                                    testimonialsVisible
+                                        ? "opacity-100 translate-y-0"
+                                        : "opacity-0 translate-y-10"
+                                }
+                            `}
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
                             <TestimonialCard
                                 quote={testimonial.quote}
                                 author={testimonial.author}
-                                role={testimonial.role}
                             />
                         </div>
                     ))}

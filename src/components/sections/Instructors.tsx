@@ -59,11 +59,6 @@ export function Instructors() {
                                 <h3 className="font-script text-3xl text-rest-charcoal mb-2">
                                     Hi! I'm {instructor.name}
                                 </h3>
-
-                                <p className="font-serif text-lg text-rest-warm-brown italic mb-6">
-                                    {instructor.tagline}
-                                </p>
-
                                 <p className="text-rest-warm-gray leading-relaxed mb-6">
                                     {instructor.bio}
                                 </p>
