@@ -7,7 +7,7 @@ export function Workshops() {
     const { ref: cardsRef, isVisible: cardsVisible } = useScrollAnimation();
 
     return (
-        <section id="workshops" className="py-20 bg-rest-cream">
+        <section id="workshops" className="py-20 bg-rest-light-gray">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Title */}
                 <div

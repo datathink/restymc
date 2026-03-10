@@ -2,6 +2,7 @@ import { Header, Footer } from "./components/layout";
 import {
     Hero,
     YogaClasses,
+    AboutStudio,
     PersonalServices,
     Workshops,
     Instructors,
@@ -15,6 +16,7 @@ function App() {
             <main>
                 <Hero />
                 <YogaClasses />
+                <AboutStudio />
                 <PersonalServices />
                 <Workshops />
                 <YogaTherapy />

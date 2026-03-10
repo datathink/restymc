@@ -69,15 +69,15 @@ export function Header() {
                                     handleNavClick(item.href);
                                 }}
                                 className="
-                  text-sm font-medium text-rest-warm-gray
-                  hover:text-rest-charcoal
-                  transition-colors duration-200
-                  relative
-                  after:content-[''] after:absolute after:bottom-[-4px] after:left-0
-                  after:w-0 after:h-[2px] after:bg-rest-warm-brown
-                  after:transition-all after:duration-300
-                  hover:after:w-full
-                "
+                                    text-sm font-medium text-rest-warm-gray
+                                    hover:text-rest-charcoal
+                                    transition-colors duration-200
+                                    relative
+                                    after:content-[''] after:absolute after:-bottom-1 after:left-0
+                                    after:w-0 after:h-0.5 after:bg-rest-warm-brown
+                                    after:transition-all after:duration-300
+                                    hover:after:w-full
+                                    "
                             >
                                 {item.label}
                             </a>

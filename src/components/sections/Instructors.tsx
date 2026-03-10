@@ -5,7 +5,7 @@ export function Instructors() {
     const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation();
 
     return (
-        <section id="about" className="py-20 bg-rest-light-gray">
+        <section id="team" className="py-20 bg-rest-light-gray">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div ref={sectionRef} className="space-y-16">
                     {instructors.map((instructor, index) => (

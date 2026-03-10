@@ -7,7 +7,7 @@ export function PersonalServices() {
     const { ref: cardsRef, isVisible: cardsVisible } = useScrollAnimation();
 
     return (
-        <section id="services" className="py-20 bg-rest-light-gray">
+        <section id="services" className="py-20 bg-rest-cream">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Title */}
                 <div

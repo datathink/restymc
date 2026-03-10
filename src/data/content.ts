@@ -1,13 +1,6 @@
 // Pricing tiers
 export const pricingTiers = [
     {
-        id: "first-free",
-        name: "first class",
-        price: "FREE",
-        subtext: "code: 1FREE",
-        link: "https://momence.com/Rest%3AYoga-and-Mindfulness-Center/membership/First-Time-Pass/58250",
-    },
-    {
         id: "first-time",
         name: "first time pass",
         price: 22,
@@ -69,17 +62,17 @@ export const services = [
 // Workshops
 export const workshops = [
     {
-        id: "self-love",
-        title: "self-love is not selfish",
-        description:
-            "Studies show that self-compassion leads to deeper curiosity, the capacity to look outward, boosts our mood, and strengthens our relationship with those we love most. Come learn the Three Pillars of Self-Love & how to cultivate it in our lives.",
-        season: "Spring",
-    },
-    {
         id: "advanced",
         title: "take your yoga practice to the next level",
         description:
             "Are you intimidated by arm balances or headstands? Do you want to deepen and enhance your experience with meditation? These workshops will take you where you need to go!",
+        season: "Spring",
+    },
+    {
+        id: "self-love",
+        title: "self-love is not selfish",
+        description:
+            "Studies show that self-compassion leads to deeper curiosity, the capacity to look outward, boosts our mood, and strengthens our relationship with those we love most. Come learn the Three Pillars of Self-Love & how to cultivate it in our lives.",
         season: "Fall",
     },
 ];
@@ -132,10 +125,11 @@ export const testimonials = [
 // Navigation items
 export const navItems = [
     { label: "Classes", href: "#classes" },
+    { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Workshops", href: "#workshops" },
     { label: "Yoga Therapy", href: "#therapy" },
-    { label: "About", href: "#about" },
+    { label: "Team", href: "#team" },
     { label: "Contact", href: "#contact" },
 ];
 

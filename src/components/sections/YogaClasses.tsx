@@ -41,7 +41,7 @@ export function YogaClasses() {
                             Yoga
                         </h2>
 
-                        <ul className="space-y-4 mb-8">
+                        <ul className="mt-2 mb-8">
                             {questions.map((question, index) => (
                                 <li
                                     key={index}
@@ -59,6 +59,10 @@ export function YogaClasses() {
                                 </li>
                             ))}
                         </ul>
+
+                        <div className="font-bold mb-4 text-rest-sage text-xl">
+                            Then yoga is for you!
+                        </div>
 
                         {/* Promo Banner */}
                         <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
@@ -82,7 +86,7 @@ export function YogaClasses() {
                         {/* Pricing Cards */}
                         <div
                             ref={cardsRef}
-                            className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+                            className="grid grid-cols-2 sm:grid-cols-3 gap-4"
                         >
                             {pricingTiers.map((tier, index) => (
                                 <div
@@ -107,7 +111,6 @@ export function YogaClasses() {
                                         <PricingCard
                                             name={tier.name}
                                             price={tier.price}
-                                            subtext={tier.subtext}
                                         />
                                     </a>
                                 </div>
