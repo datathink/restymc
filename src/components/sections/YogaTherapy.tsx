@@ -35,17 +35,34 @@ export function YogaTherapy() {
 
                     {/* Content */}
                     <div>
-                        <h2 className="font-script text-4xl md:text-5xl text-rest-charcoal mb-6">
+                        <h2 className="font-script text-4xl md:text-5xl text-rest-charcoal mb-4">
                             {yogaTherapyContent.title}
                         </h2>
+
+                        <p className="font-script italic text-xl text-rest-sage mb-6">
+                            {yogaTherapyContent.tagline}
+                        </p>
 
                         <p className="text-rest-warm-gray leading-relaxed mb-6">
                             {yogaTherapyContent.description}
                         </p>
 
-                        <Button variant="secondary">
-                            {yogaTherapyContent.ctaText}
-                        </Button>
+                        <p className="text-rest-warm-gray leading-relaxed mb-2">
+                            {yogaTherapyContent.individualPricing}
+                        </p>
+
+                        <p className="text-rest-warm-gray leading-relaxed mb-8">
+                            {yogaTherapyContent.groupNote}
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <Button variant="secondary" href="#">
+                                {yogaTherapyContent.bookCtaText}
+                            </Button>
+                            <Button variant="outline" href="#">
+                                {yogaTherapyContent.waitlistCtaText}
+                            </Button>
+                        </div>
                     </div>
                 </div>
 

@@ -120,6 +120,11 @@ export const testimonials = [
         quote: "I have never been flexible, so yoga was always intimidating to me, but I love practicing yoga at REST! Julia is always encouraging and she provides lots of options for each pose. I always come away from a yoga session feeling that my body has been strengthened and my mind has been calmed. I highly recommend it!",
         author: "Debbie",
     },
+    {
+        id: "6",
+        quote: "Practicing yoga at REST has improved my physical wellbeing by helping my balance and keeping me flexible. I do other forms of exercise, but yoga really helps me focus on the stretching and gives me the time to find what wants and needs to be worked. I also appreciate the calm that yoga helps me to find in myself. Slow, controlled breathing is a struggle for me, but as each session begins and Julia asks me to focus on my breathing, the time that I take to focus, even when it’s difficult, really sets the stage and helps me to concentrate on the things I need to do for the rest of the session. I’m still learning to apply these things outside the yoga studio, but I’m getting better at focusing and breathing when I need to. I love going to yoga at REST!",
+        author: "Unknown",
+    },
 ];
 
 // Navigation items
@@ -143,9 +148,16 @@ export const heroContent = {
 
 // Yoga Therapy content
 export const yogaTherapyContent = {
-    title: "Yoga Therapy Coming Soon",
-    description: "Interested in joining a free session?",
-    ctaText: "Join the Wait List",
+    title: "Yoga Therapy",
+    tagline: "Yoga is more than an exercise, it's a lifestyle!",
+    description:
+        "In yoga therapy we glean from the 8 Limbed Path to create wholeness and health for our body, mind and spirit. Tools such as breathwork, movement, meditation, daily routine and more are utilized to help you reach your personal goal for wellness. A yoga therapist will assess your posture, breath, stress, sleep, habits and emotions to determine the best path in creating the life you want! Whether healing from an injury, striving to maintain health goals, or wanting to live a more mindful life, come to a session and watch your life transform.",
+    individualPricing:
+        "Individual sessions are available for booking at our introductory price of $25 each or commit to 6 Sessions for $135!",
+    groupNote:
+        "Group sessions will also be offered starting in the Fall of 2026.",
+    bookCtaText: "Book Your Individual Session",
+    waitlistCtaText: "Join the Group Therapy Waitlist",
 };
 
 // Contact/Footer content
