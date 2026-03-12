@@ -34,20 +34,17 @@ export function AboutStudio() {
                     </h2>
 
                     <p className="text-lg text-rest-warm-gray max-w-3xl mx-auto mb-12">
-                        Here we take a therapeutic approach to yoga. Yoga was
-                        never meant for flexible contortionists. Yoga was meant
-                        for YOU. Whether you want gentle movement, strengthened
-                        muscles, better balance, mindful awareness, love of
-                        body, or peace of mind, you will find a place here.
+                        Here at REST: Yoga & Mindfulness Center we take a
+                        therapeutic approach. Yoga was never meant for flexible
+                        contortionists. Yoga was meant for YOU. Whether you want
+                        gentle movement, strengthened muscles, better balance,
+                        mindful awareness, love of body, or peace of mind, you
+                        will find a place here.
                     </p>
 
                     <h3 className="font-script text-3xl md:text-4xl text-rest-charcoal italic mb-6">
                         Why choose REST?
                     </h3>
-
-                    <p className="text-rest-warm-gray text-lg mb-4">
-                        Here we offer:
-                    </p>
 
                     <ul className="inline-block text-left">
                         {offerings.map((item, index) => (

@@ -26,10 +26,17 @@ export function YogaTherapy() {
                 >
                     {/* Image */}
                     <div className="relative">
+                        {/* Mobile: square face crop */}
+                        <img
+                            src="/julia-ending-mobile.png"
+                            alt="Yoga therapy session"
+                            className="sm:hidden rounded-lg shadow-xl mx-auto w-64 h-64 object-cover"
+                        />
+                        {/* Desktop: full image */}
                         <img
                             src="/julia-ending.png"
                             alt="Yoga therapy session"
-                            className="rounded-lg shadow-xl mx-auto w-100 h-175 object-cover"
+                            className="hidden sm:block rounded-lg shadow-xl mx-auto sm:w-64 sm:h-64 md:w-100 md:h-175 object-cover"
                         />
                     </div>
 
@@ -39,7 +46,7 @@ export function YogaTherapy() {
                             {yogaTherapyContent.title}
                         </h2>
 
-                        <p className="font-script italic text-xl text-rest-sage mb-6">
+                        <p className="font-bold text-sm sm:text-xl text-rest-sage mb-6">
                             {yogaTherapyContent.tagline}
                         </p>
 
@@ -58,9 +65,6 @@ export function YogaTherapy() {
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Button variant="secondary" href="#">
                                 {yogaTherapyContent.bookCtaText}
-                            </Button>
-                            <Button variant="outline" href="#">
-                                {yogaTherapyContent.waitlistCtaText}
                             </Button>
                         </div>
                     </div>

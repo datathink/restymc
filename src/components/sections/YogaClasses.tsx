@@ -60,7 +60,7 @@ export function YogaClasses() {
                             ))}
                         </ul>
 
-                        <div className="font-bold mb-4 text-rest-sage text-xl">
+                        <div className="font-bold mb-4 text-rest-sage text-xl text-center">
                             Then yoga is for you!
                         </div>
 
@@ -86,7 +86,7 @@ export function YogaClasses() {
                         {/* Pricing Cards */}
                         <div
                             ref={cardsRef}
-                            className="grid grid-cols-2 sm:grid-cols-3 gap-4"
+                            className="grid grid-cols-2 sm:grid-cols-4 gap-4"
                         >
                             {pricingTiers.map((tier, index) => (
                                 <div
@@ -127,7 +127,6 @@ export function YogaClasses() {
                     {/* Image */}
                     <div
                         className={`
-                            hidden lg:block
                             transition-all duration-700 ease-out delay-300
                             ${
                                 sectionVisible
@@ -139,7 +138,7 @@ export function YogaClasses() {
                         <img
                             src="/studio.png"
                             alt="Yoga studio with equipment and mats"
-                            className="rounded-lg shadow-xl object-cover w-full h-175"
+                            className="rounded-lg shadow-xl object-cover w-full h-96 sm:h-175"
                         />
                     </div>
                 </div>

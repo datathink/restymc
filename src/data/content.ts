@@ -18,6 +18,12 @@ export const pricingTiers = [
         price: 95,
         link: "https://momence.com/Rest%3AYoga-and-Mindfulness-Center/membership/10-Class-Pass-/58248",
     },
+    {
+        id: "private-session",
+        name: "private group",
+        price: 75,
+        link: "https://momence.com/Rest%3AYoga-and-Mindfulness-Center/membership/10-Class-Pass-/58248",
+    },
 ];
 
 // Personal services
@@ -123,7 +129,7 @@ export const testimonials = [
     {
         id: "6",
         quote: "Practicing yoga at REST has improved my physical wellbeing by helping my balance and keeping me flexible. I do other forms of exercise, but yoga really helps me focus on the stretching and gives me the time to find what wants and needs to be worked. I also appreciate the calm that yoga helps me to find in myself. Slow, controlled breathing is a struggle for me, but as each session begins and Julia asks me to focus on my breathing, the time that I take to focus, even when it’s difficult, really sets the stage and helps me to concentrate on the things I need to do for the rest of the session. I’m still learning to apply these things outside the yoga studio, but I’m getting better at focusing and breathing when I need to. I love going to yoga at REST!",
-        author: "Unknown",
+        author: "Rebecca",
     },
 ];
 
@@ -156,8 +162,7 @@ export const yogaTherapyContent = {
         "Individual sessions are available for booking at our introductory price of $25 each or commit to 6 Sessions for $135!",
     groupNote:
         "Group sessions will also be offered starting in the Fall of 2026.",
-    bookCtaText: "Book Your Individual Session",
-    waitlistCtaText: "Join the Group Therapy Waitlist",
+    bookCtaText: "Book Your Session",
 };
 
 // Contact/Footer content
