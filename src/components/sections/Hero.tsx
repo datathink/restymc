@@ -34,7 +34,7 @@ export function Hero() {
                     >
                         <div className="relative">
                             <img
-                                src="/header.jpg"
+                                src="/header.jpeg"
                                 alt="Eucalyptus plant in glass vase"
                                 className="rounded-lg shadow-xl max-w-xs lg:max-w-sm object-cover"
                             />
@@ -102,7 +102,6 @@ export function Hero() {
                                 {heroContent.description}
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
