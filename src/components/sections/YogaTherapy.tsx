@@ -30,12 +30,14 @@ export function YogaTherapy() {
                         <img
                             src="/julia-ending-mobile.png"
                             alt="Yoga therapy session"
+                            loading="lazy"
                             className="sm:hidden rounded-lg shadow-xl mx-auto w-64 h-64 object-cover"
                         />
                         {/* Desktop: full image */}
                         <img
                             src="/julia-ending.png"
                             alt="Yoga therapy session"
+                            loading="lazy"
                             className="hidden sm:block rounded-lg shadow-xl mx-auto sm:w-64 sm:h-64 md:w-100 md:h-175 object-cover"
                         />
                     </div>

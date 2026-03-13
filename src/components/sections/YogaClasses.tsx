@@ -137,6 +137,7 @@ export function YogaClasses() {
                     >
                         <img
                             src="/studio.png"
+                            loading="lazy"
                             alt="Yoga studio with equipment and mats"
                             className="rounded-lg shadow-xl object-cover w-full h-96 sm:h-175"
                         />

@@ -32,6 +32,7 @@ export function Instructors() {
                                     <img
                                         src={instructor.image}
                                         alt={`${instructor.name} - Yoga Instructor`}
+                                        loading="lazy"
                                         className="rounded-lg shadow-xl w-full h-100 object-cover"
                                     />
                                     {/* Decorative element */}
