@@ -57,7 +57,7 @@ export function YogaTherapy() {
                             {yogaTherapyContent.entry}
                         </p>
 
-                        <ul className="list-disc list-inside text-rest-warm-gray leading-relaxed mb-6 space-y-1">
+                        <ul className="list-disc pl-5 text-rest-warm-gray leading-relaxed mb-6 space-y-1">
                             {yogaTherapyContent.painPoints.map((point, i) => (
                                 <li key={i}>{point}</li>
                             ))}
