@@ -22,7 +22,7 @@ export const pricingTiers = [
         id: "private-session",
         name: "private group",
         price: 75,
-        link: "https://momence.com/Rest%3AYoga-and-Mindfulness-Center/membership/10-Class-Pass-/58248",
+        link: "https://momence.com/appointments/appointment-reservation/29845?boardId=22706",
     },
 ];
 
@@ -68,11 +68,12 @@ export const services = [
 // Workshops
 export const workshops = [
     {
-        id: "advanced",
-        title: "take your yoga practice to the next level",
+        id: "yoga-day",
+        title: "celebrate international yoga day with us",
         description:
-            "Are you intimidated by arm balances or headstands? Do you want to deepen and enhance your experience with meditation? These workshops will take you where you need to go!",
+            "Come join us for a day of exploration of all that yoga has to offer! Experience different styles of yoga, meditation, mindfulness and even yoga for kids.",
         season: "Spring",
+        link: "https://momence.com/dashboard/intake-form/2wj3A1oO8O",
     },
     {
         id: "self-love",
@@ -80,6 +81,7 @@ export const workshops = [
         description:
             "Studies show that self-compassion leads to deeper curiosity, the capacity to look outward, boosts our mood, and strengthens our relationship with those we love most. Come learn the Three Pillars of Self-Love & how to cultivate it in our lives.",
         season: "Fall",
+        link: "https://momence.com/dashboard/intake-form/PlXwRyE81G",
     },
 ];
 
@@ -128,7 +130,7 @@ export const testimonials = [
     },
     {
         id: "6",
-        quote: "Practicing yoga at REST has improved my physical wellbeing by helping my balance and keeping me flexible. I do other forms of exercise, but yoga really helps me focus on the stretching and gives me the time to find what wants and needs to be worked. I also appreciate the calm that yoga helps me to find in myself. Slow, controlled breathing is a struggle for me, but as each session begins and Julia asks me to focus on my breathing, the time that I take to focus, even when it’s difficult, really sets the stage and helps me to concentrate on the things I need to do for the rest of the session. I’m still learning to apply these things outside the yoga studio, but I’m getting better at focusing and breathing when I need to. I love going to yoga at REST!",
+        quote: "Practicing yoga at REST has improved my physical well being by helping my balance and keeping me flexible. I appreciate the calm yoga helps me find in myself. I’m getting better at focusing and breathing when I need to. I love practicing yoga at REST!",
         author: "Rebecca",
     },
 ];
@@ -156,13 +158,19 @@ export const heroContent = {
 export const yogaTherapyContent = {
     title: "Yoga Therapy",
     tagline: "Yoga is more than an exercise, it's a lifestyle!",
+    painPoints: [
+        "You're tired and don't know why.",
+        "You're stressed and it's affecting your health.",
+        "You're in pain and nothing seems to help.",
+        "You want to feel better but don't know where to start.",
+        "You're looking for a holistic approach to wellness.",
+    ],
     description:
-        "In yoga therapy we glean from the 8 Limbed Path to create wholeness and health for our body, mind and spirit. Tools such as breathwork, movement, meditation, daily routine and more are utilized to help you reach your personal goal for wellness. A yoga therapist will assess your posture, breath, stress, sleep, habits and emotions to determine the best path in creating the life you want! Whether healing from an injury, striving to maintain health goals, or wanting to live a more mindful life, come to a session and watch your life transform.",
-    individualPricing:
-        "Individual sessions are available for booking at our introductory price of $25 each or commit to 6 Sessions for $135!",
-    groupNote:
-        "Group sessions will also be offered starting in the Fall of 2026.",
-    bookCtaText: "Book Your Session",
+        "In yoga therapy we glean from the 8 Limbed Path to create wholeness and health for our body, mind and spirit. Tools such as breathwork, movement, meditation, daily routine and more are utilized to help you reach your personal goal for wellness. A yoga therapist will assess your posture, breath, stress, sleep, habits and emotions to determine the best path in creating the life you want!",
+    ctaText: "Come and see what yoga therapy has for you!",
+    bookCtaText: "Book Free Consultation",
+    bookCtaLink:
+        "https://momence.com/appointments/appointment-reservation/29845?boardId=157305",
 };
 
 // Contact/Footer content

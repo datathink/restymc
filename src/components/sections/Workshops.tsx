@@ -49,6 +49,7 @@ export function Workshops() {
                                 title={workshop.title}
                                 description={workshop.description}
                                 season={workshop.season}
+                                link={workshop.link}
                             />
                         </div>
                     ))}

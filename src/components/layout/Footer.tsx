@@ -16,9 +16,7 @@ export function Footer() {
                             Yoga & Mindfulness Center
                         </p>
                         <p className="text-sm text-rest-warm-gray leading-relaxed">
-                            Renew. Embrace. Strengthen. Transform.
-                            <br />
-                            Your journey to wellness begins here.
+                            your body, your mind, your spirit
                         </p>
                     </div>
 

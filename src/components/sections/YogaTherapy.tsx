@@ -52,20 +52,25 @@ export function YogaTherapy() {
                             {yogaTherapyContent.tagline}
                         </p>
 
+                        <ul className="list-disc list-inside text-rest-warm-gray leading-relaxed mb-6 space-y-1">
+                            {yogaTherapyContent.painPoints.map((point, i) => (
+                                <li key={i}>{point}</li>
+                            ))}
+                        </ul>
+
                         <p className="text-rest-warm-gray leading-relaxed mb-6">
                             {yogaTherapyContent.description}
                         </p>
 
-                        <p className="text-rest-warm-gray leading-relaxed mb-2">
-                            {yogaTherapyContent.individualPricing}
-                        </p>
-
-                        <p className="text-rest-warm-gray leading-relaxed mb-8">
-                            {yogaTherapyContent.groupNote}
+                        <p className="text-rest-warm-gray leading-relaxed mb-6 font-semibold italic">
+                            {yogaTherapyContent.ctaText}
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button variant="secondary" href="#">
+                            <Button
+                                variant="secondary"
+                                href={yogaTherapyContent.bookCtaLink}
+                            >
                                 {yogaTherapyContent.bookCtaText}
                             </Button>
                         </div>

@@ -4,6 +4,7 @@ interface WorkshopCardProps {
     title: string;
     description: string;
     season: string;
+    link?: string;
     className?: string;
 }
 
@@ -11,6 +12,7 @@ export function WorkshopCard({
     title,
     description,
     season,
+    link,
     className = "",
 }: WorkshopCardProps) {
     return (
@@ -32,7 +34,7 @@ export function WorkshopCard({
                 <p className="text-xs font-medium text-rest-sage italic">
                     {season}
                 </p>
-                <Button className="w-full bg-rest-cream! text-xs py-2">
+                <Button href={link} className="w-full bg-rest-cream! text-xs py-2">
                     Join the Wait List
                 </Button>
             </div>
