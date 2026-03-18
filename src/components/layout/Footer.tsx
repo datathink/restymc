@@ -16,7 +16,7 @@ export function Footer() {
                             Yoga & Mindfulness Center
                         </p>
                         <p className="text-sm text-rest-warm-gray leading-relaxed">
-                            your body, your mind, your spirit
+                            Your body. Your mind. Your spirit.
                         </p>
                     </div>
 

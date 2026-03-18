@@ -3,7 +3,6 @@ import {
     Hero,
     YogaClasses,
     AboutStudio,
-    PersonalServices,
     Workshops,
     Instructors,
     YogaTherapy,
@@ -17,7 +16,6 @@ function App() {
                 <Hero />
                 <YogaClasses />
                 <AboutStudio />
-                <PersonalServices />
                 <Workshops />
                 <YogaTherapy />
                 <Instructors />

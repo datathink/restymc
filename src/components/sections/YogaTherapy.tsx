@@ -48,8 +48,13 @@ export function YogaTherapy() {
                             {yogaTherapyContent.title}
                         </h2>
 
-                        <p className="font-bold text-sm sm:text-xl text-rest-sage mb-6">
-                            {yogaTherapyContent.tagline}
+                        <p className="font-bold text-xl text-rest-sage mb-6 flex-col sm:flex-row flex items-center sm:items-start sm:gap-1">
+                            <span>Yoga is more than an exercise,</span>{" "}
+                            <span>it's a lifestyle!</span>
+                        </p>
+
+                        <p className="font-bold mb-3">
+                            {yogaTherapyContent.entry}
                         </p>
 
                         <ul className="list-disc list-inside text-rest-warm-gray leading-relaxed mb-6 space-y-1">

@@ -138,11 +138,10 @@ export const testimonials = [
 // Navigation items
 export const navItems = [
     { label: "Classes", href: "#classes" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
+    { label: "Studio", href: "#about" },
     { label: "Workshops", href: "#workshops" },
     { label: "Yoga Therapy", href: "#therapy" },
-    { label: "Team", href: "#team" },
+    { label: "About", href: "#team" },
     { label: "Contact", href: "#contact" },
 ];
 
@@ -157,12 +156,14 @@ export const heroContent = {
 // Yoga Therapy content
 export const yogaTherapyContent = {
     title: "Yoga Therapy",
-    tagline: "Yoga is more than an exercise, it's a lifestyle!",
+    entry: "Does any of this resonate with you?",
     painPoints: [
         "You're tired and don't know why.",
-        "You're stressed and it's affecting your health.",
         "You're in pain and nothing seems to help.",
-        "You want to feel better but don't know where to start.",
+        "Menopause is sneaking up on you and you don’t like how it feels.",
+        "A stressful lifestyle is affecting your health.",
+        "Anxiety is controlling your life.",
+        "Recently released from surgery without support for recovery.",
         "You're looking for a holistic approach to wellness.",
     ],
     description:
