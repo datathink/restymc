@@ -90,7 +90,7 @@ export const instructors = [
     {
         id: "julia",
         name: "Julia",
-        bio: "I am a mother of seven and have been practicing yoga for over ten years. I am a 500HR certified yoga teacher and founder of REST: Yoga & Mindfulness Center.  I also enjoy pickleball, board games, reading, and friends. If you are struggling with embracing your body and/or have had health challenges, I've been there! A visit to the emergency room and autoimmune diagnosis started me on my personal yoga journey. For years I have been curious about how the body, mind and spirit all work together. Somehow yoga fell in my lap as an answer to that question and I love it! The benefits of yoga in my life have been exponential — physically, emotionally, mentally and spiritually. I only hope such a practice can do the same for you!",
+        bio: "I am a mother of seven and have been practicing yoga for over ten years. I am a 500HR certified yoga teacher, Mindfulness Coach, and founder of REST: Yoga & Mindfulness Center.  I also enjoy pickleball, board games, reading, and friends. If you are struggling with embracing your body and/or have had health challenges, I've been there! A visit to the emergency room and autoimmune diagnosis started me on my personal yoga journey. For years I have been curious about how the body, mind and spirit all work together. Somehow yoga fell in my lap as an answer to that question and I love it! The benefits of yoga in my life have been exponential — physically, emotionally, mentally and spiritually. I only hope such a practice can do the same for you!",
         image: "/julia.png",
     },
     {
