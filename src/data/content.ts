@@ -72,7 +72,7 @@ export const workshops = [
         title: "celebrate international yoga day with us",
         description:
             "Come join us for a day of exploration of all that yoga has to offer! Experience different styles of yoga, meditation, mindfulness and even yoga for kids.",
-        season: "Spring",
+        season: "Fall",
         link: "https://momence.com/dashboard/intake-form/2wj3A1oO8O",
     },
     {
@@ -80,7 +80,7 @@ export const workshops = [
         title: "self-love is not selfish",
         description:
             "Studies show that self-compassion leads to deeper curiosity, the capacity to look outward, boosts our mood, and strengthens our relationship with those we love most. Come learn the Three Pillars of Self-Love & how to cultivate it in our lives.",
-        season: "Fall",
+        season: "Winter",
         link: "https://momence.com/dashboard/intake-form/PlXwRyE81G",
     },
 ];
