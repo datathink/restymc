@@ -69,11 +69,11 @@ export const services = [
 export const workshops = [
     {
         id: "yoga-day",
-        title: "celebrate international yoga day with us",
+        title: "inner peace and renewal retreat",
         description:
-            "Come join us for a day of exploration of all that yoga has to offer! Experience different styles of yoga, meditation, mindfulness and even yoga for kids.",
-        season: "Fall",
-        link: "https://momence.com/dashboard/intake-form/2wj3A1oO8O",
+            "Come join us for a day of exploration of all that yoga has to offer! Experience different styles of yoga, meditation, and mindfulness.",
+        season: "October 24, 8am - 2pm",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSc0A1xUfU9iHpLx2TiDGG9OPUcWPx_23EeNhBGxDnA6gFbsOg/viewform",
     },
     {
         id: "self-love",
